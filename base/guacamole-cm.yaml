@@ -19,6 +19,7 @@ data:
     <param name="hostname">192.168.0.62</param>
     <param name="port">3390</param>
     <param name="username">ruser</param>
+    <param name="password">ped4ruser</param>
     <param name="domain">kvmuds02</param>
     <param name="security">vmconnect</param>
     <param name="ignore-cert">true</param>
