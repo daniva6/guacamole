@@ -1,0 +1,61 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: guacamole-conf
+  namespace: guacamole
+data:
+  user-mapping.xml: |
+    <user-mapping>
+    <authorize username="daniva" password="vVC!Cwh2aAYJxbNLo9BhMfqTTGe@Kxxagad*Mo9reWuv6-ALsP6cVhnaHVBoysfq">
+
+    <connection name="kvmuds01">
+    <protocol>rdp</protocol>
+    <param name="hostname">192.168.0.61</param>
+    <param name="port">3389</param>
+    <param name="username">daniva</param>
+    <param name="password">Daniel09v</param>
+    <param name="domain">kvmuds02</param>
+    <param name="security">vmconnect</param>
+    <param name="ignore-cert">true</param>
+    <param name="server-layout">de-ch-qwertz</param>
+    </connection>
+
+    <connection name="kvmuds02">
+    <protocol>ssh</protocol>
+    <param name="hostname">192.168.0.62</param>
+    <param name="username">daniva</param>
+    <param name="server-layout">de-ch-qwertz</param>
+    </connection>
+
+    <connection name="kvmuds02-gui">
+    <protocol>rdp</protocol>
+    <param name="hostname">192.168.0.62</param>
+    <param name="port">3390</param>
+    <param name="username">ruser</param>
+    <param name="password">ped4ruser</param>
+    <param name="domain">kvmuds02</param>
+    <param name="security">vmconnect</param>
+    <param name="ignore-cert">true</param>
+    <param name="server-layout">de-ch-qwertz</param>
+    </connection>
+    
+    <connection name="win11">
+    <protocol>rdp</protocol>
+    <param name="hostname">192.168.0.68</param>
+    <param name="port">3389</param>
+    <param name="username">daniva</param>
+    <param name="ignore-cert">true</param>
+    <param name="server-layout">de-ch-qwertz</param>
+    </connection>
+
+    <connection name="nuc01">
+    <protocol>rdp</protocol>
+    <param name="hostname">192.168.100.63</param>
+    <param name="port">3389</param>
+    <param name="username">daniel.vogel@gmx.ch</param>
+    <param name="ignore-cert">true</param>
+    <param name="server-layout">de-ch-qwertz</param>
+    </connection>
+
+    </authorize>
+    </user-mapping>
